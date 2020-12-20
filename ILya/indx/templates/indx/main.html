@@ -1,0 +1,55 @@
+{% extends 'indx/index.html' %}
+
+{% block content %}
+
+    <div id='frist_part'>
+        {% load static %}
+        <center><img src="{% static 'indx/photos/Main_photo.jpg' %}" alt="" id='photo1'></center>
+    </div>
+
+    <div id="second_part">
+        <center><div class="frist_part_div1" data-0='opacity:0;right:500px;' data-center-center='opacity:1;right:0px;'>
+            <a href="{% url 'indx:bio' %}"><p class="urls">Биография &#x2192;</p></a>
+        </div></center>
+
+        <center><div class="frist_part_div2" data-0='opacity:0;right:500px;' data-center-center='opacity:1;right:0px;'>
+            <a href="{% url 'indx:galary' %}"><p class="urls">Фотогалерея &#x2192;</p></a>
+        </div></center>
+    </div>
+
+    <div id="third_part">
+
+        <div id="third_part1" class="third_part_div">
+            {% load static %}
+            <img src="{% static 'indx/photos/icons/vk.png' %}" alt="" id='vk' class='icons'>
+            <a href="https://vk.com/id306635651"><label for="vk" class='labels_for_icons'>
+                <p id="icon_label_text">VK</p>
+            </label></a><br>
+            <img src="{% static 'indx/photos/icons/instagram.png' %}" alt="" id='instagram' class='icons'>
+            <a href="https://www.instagram.com/_cmailik_/"><label for="instagram" class='labels_for_icons'>
+                <p id="icon_label_text">Instagram</p>
+            </label></a><br>
+        </div>
+
+        <div id="third_part2" class="third_part_div">
+            <p id='stats_title'>Характеристика.</p>
+            <p class='stats_main'>Вес: 69кг</p>
+            <p class='stats_main'>Рост: 173см</p>
+            <p class='stats_main'>IQ: 100-120</p>
+        </div>
+
+    </div>
+
+    <footer class="page-footer font-small gray" id='footer'>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#">Kamikaze</a>
+        </div>
+    </footer>
+
+    {% load static %}
+    <script src='{% static "indx/skrollr.min.js" %}'></script>
+    <script type='text/javascript'>
+        var s = skrollr.init();
+    </script>
+    
+{% endblock content %}

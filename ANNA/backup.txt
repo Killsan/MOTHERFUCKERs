@@ -1,0 +1,25 @@
+    user_data = {
+        'procent': 0,
+        'correct_questions': [],
+        'uncorrect_questions': [],
+    }
+
+    user_data['procent'] = round((user_score*100)/11, 1)
+
+    print(user_score)
+    print(user_data['procent'])
+
+    user_answers = {}
+    correct_answers = {
+        'q1': 'q14',
+        'q2': 'q23',
+        'q3': 'q32',
+        'q4': 'q44',
+        'q5': 'q53',
+        'q6': 'q63',
+        'q7': 'q72',
+        'q8': 'q84',
+        'q9': 'q92',
+        'q10': 'q105',
+        'q11': 'q111',
+    }

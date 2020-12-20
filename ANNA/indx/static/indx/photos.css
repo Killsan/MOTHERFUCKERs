@@ -1,0 +1,21 @@
+body{
+    background-image: url("unicorn2.png");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* position: static; */
+    background-size: 10%;
+}
+
+#main_photos{
+    padding-top: 5%;
+}
+
+#main_photos_last{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#photo{
+    padding: 0.2%;
+}

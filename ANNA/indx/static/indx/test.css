@@ -1,0 +1,88 @@
+body{
+    background-image: url("unicorn2.png");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* position: static; */
+    background-size: 10%;
+}
+
+#introduction{
+    padding: 5%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 30%;
+    margin: 10%;
+    border-radius: 10%;
+    font-size: 140%;
+}
+
+#intro_sub{
+    width: 40%;
+    background: white;
+    color: black;
+}
+
+#intro_sub:hover{
+    background: rgb(170, 170, 170);
+    color: white;
+}
+
+.main_questions{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 150%;
+    border-bottom: 1px solid gray;
+}
+
+#check_button{
+    margin: 5%;
+    width: 9%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border: 3px solid black;
+    background: white;
+    border-radius: 20px;
+    font-size: 130%;
+}
+
+#result_main{
+    padding: 5%;
+    font-size: 500%;
+    color: gray;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    width: 40%;
+    margin: 4%;
+}
+
+#questions{
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 3%;
+    margin: 3%;
+    font-size: 150%;
+}
+
+#answers{
+    padding: 1%;
+    font-size: 120%;
+    color: rgb(92, 92, 92);
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+}
+
+.answers_p{
+    display: inline;
+}
+
+#return_to_page{
+    font-size: 150%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 30%;
+    border-radius: 20px;
+}

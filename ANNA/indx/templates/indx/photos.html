@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'indx/photos.css' %}">
+</head>
+<body>
+    {% load static %}
+    <center><div id="main_photos">
+        <img src="{% static 'indx/photos/1.jpg' %}" class="rounded float-center" width="50%" id='photo'>
+        <img src="{% static 'indx/photos/2.jpg' %}" class="rounded float-center" width='17%' id='photo'>
+    </div></center>
+
+    <center><div id="main_photos">
+        <img src="{% static 'indx/photos/3.jpg' %}" class="rounded float-center" width="30%" id='photo'>
+        <img src="{% static 'indx/photos/4.jpg' %}" class="rounded float-center" width='21%' id='photo'>
+    </div></center>
+
+    <center><div id="main_photos">
+        <img src="{% static 'indx/photos/5.jpg' %}" class="rounded float-center" width="36%" id='photo'>
+        <img src="{% static 'indx/photos/6.jpg' %}" class="rounded float-center" width='20.5%' id='photo'>
+        <img src="{% static 'indx/photos/7.jpg' %}" class="rounded float-center" width="14%" id='photo'>
+    </div></center>
+
+    <center><div id="main_photos">
+        <img src="{% static 'indx/photos/8.jpg' %}" class="rounded float-center" width='25%' id='photo'>
+        <img src="{% static 'indx/photos/9.jpg' %}" class="rounded float-center" width="30%" id='photo'>
+        <img src="{% static 'indx/photos/10.jpg' %}" class="rounded float-center" width='16%' id='photo'>
+    </div></center>
+
+    <center><div id="main_photos_last">
+        <img src="{% static 'indx/photos/11.jpg' %}" class="rounded float-center" width="20%" id='photo'>
+        <img src="{% static 'indx/photos/12.jpg' %}" class="rounded float-center" width='28.5%' id='photo'>
+        <img src="{% static 'indx/photos/13.jpg' %}" class="rounded float-center" width='33%' id='photo'>
+    </div></center>
+</body>

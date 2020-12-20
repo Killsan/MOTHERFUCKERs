@@ -1,0 +1,26 @@
+{% extends 'indx/test.html' %}
+
+{% block content %}
+
+    <center><div id="result_main">
+        <center><p>{{procent}}%</p></center>
+    </div></center>
+
+    <div id="questions">
+        <div id="answers">
+            <p class="answers_p">Правильные: </p>
+            <p class="answers_p">{{correct_questions}}</p>
+        </div>
+        <div id="answers">
+            <p class="answers_p">Неправильные: </p>
+            <p class="answers_p">{{uncorrect_questions}}</p>
+        </div>
+    </div>
+
+    <center><a href="{% url 'indx:index' %}"><p id='return_to_page'>На главную</p></a></center>
+
+    <script type='text/javascript'>
+        document.getElementById('introduction').hidden = true;
+    </script>
+
+{% endblock content %}

@@ -1,0 +1,278 @@
+{% extends 'indx/test.html' %}
+
+{% block content %}
+
+    <center>
+    <form action="{% url 'indx:result' %}" method="POST">
+    {% csrf_token %}
+        <div class="main_questions">
+            <p class="main_questions_p">Как зовут Аню?</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q1' value='q11'>
+                <label class="form-check-label" for="question_input">аННЕТ</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q1' value='q12'>
+                <label class="form-check-label" for="question_input">НЮРКА</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q1' value='q13'>
+                <label class="form-check-label" for="question_input">анна</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q1' value='q14'>
+                <label class="form-check-label" for="question_input">Ганна</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q1' value='q15'>
+                <label class="form-check-label" for="question_input">Аннет жопа</label>
+            </div>
+
+        </div>
+
+        <div class="main_questions">
+            <p class="main_questions_p">Какие любимые цветы Ани?</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q2' value="q21">
+                <label class="form-check-label" for="question_input">Ромашковые хризантемы</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q2' value="q22">
+                <label class="form-check-label" for="question_input">Тюльпаны</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q2' value="q23">
+                <label class="form-check-label" for="question_input">Пионы</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q2' value="q24">
+                <label class="form-check-label" for="question_input">Гортензия </label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q2' value="q25">
+                <label class="form-check-label" for="question_input">Лилии</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Любимый предмет в школе:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q3' value="q31">
+                <label class="form-check-label" for="question_input">История</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q3' value="q32">
+                <label class="form-check-label" for="question_input">Обществоведение</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q3' value="q33">
+                <label class="form-check-label" for="question_input">Русский язык</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q3' value="q34">
+                <label class="form-check-label" for="question_input">Биология</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q3' value="q35">
+                <label class="form-check-label" for="question_input">Математика</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Самый страшный фильм который Аня смотрела:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q4' value="q41">
+                <label class="form-check-label" for="question_input">Астрал 1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q4' value="q42">
+                <label class="form-check-label" for="question_input">Астрал 2</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q4' value="q43">
+                <label class="form-check-label" for="question_input">Астрал 3</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q4' value="q44">
+                <label class="form-check-label" for="question_input">Астрал 4</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q4' value="q45">
+                <label class="form-check-label" for="question_input">Очень страшное кино</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Любимый цвет:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q5' value="q51">
+                <label class="form-check-label" for="question_input">Черный</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q5' value="q52">
+                <label class="form-check-label" for="question_input">Красный</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q5' value="q53">
+                <label class="form-check-label" for="question_input">Фиолетовый</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q5' value="q54">
+                <label class="form-check-label" for="question_input">Розовый</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q5' value="q55">
+                <label class="form-check-label" for="question_input">Белый</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Куда бы Аня хотела поехать:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q61">
+                <label class="form-check-label" for="question_input">Минск</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q62">
+                <label class="form-check-label" for="question_input">Гомель</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q63">
+                <label class="form-check-label" for="question_input">Орша</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q64">
+                <label class="form-check-label" for="question_input">Полоцк</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q65">
+                <label class="form-check-label" for="question_input">Лида</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q6' value="q66">
+                <label class="form-check-label" for="question_input">Пинск</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Какой у Ани рост:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q7' value="q71">
+                <label class="form-check-label" for="question_input">161</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q7' value="q72">
+                <label class="form-check-label" for="question_input">162</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q7' value="q73">
+                <label class="form-check-label" for="question_input">163</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q7' value="q74">
+                <label class="form-check-label" for="question_input">165</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q7' value="q75">
+                <label class="form-check-label" for="question_input">160</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Сколько Ане лет</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q8' value="q81">
+                <label class="form-check-label" for="question_input">17.1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q8' value="q82">
+                <label class="form-check-label" for="question_input">17.2</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q8' value="q83">
+                <label class="form-check-label" for="question_input">17.3</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q8' value="q84">
+                <label class="form-check-label" for="question_input">17.4</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q8' value="q85">
+                <label class="form-check-label" for="question_input">17.5</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Анина любимая еда</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q9' value="q91">
+                <label class="form-check-label" for="question_input">Чипсики</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q9' value="q92">
+                <label class="form-check-label" for="question_input">Вареники</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q9' value="q93">
+                <label class="form-check-label" for="question_input">Вишня</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q9' value="q94">
+                <label class="form-check-label" for="question_input">Шоколад</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Чем Аня занималась в детстве:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q10' value="q101">
+                <label class="form-check-label" for="question_input">Танцами</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q10' value="q102">
+                <label class="form-check-label" for="question_input">Плетением</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q10' value="q103">
+                <label class="form-check-label" for="question_input">Рисование</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q10' value="q104">
+                <label class="form-check-label" for="question_input">Стрельба</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q10' value="q105">
+                <label class="form-check-label" for="question_input">Музыкой</label>
+            </div>
+        </div>
+        
+        <div class="main_questions">
+            <p class="main_questions_p">Отдала бы Аня свои органы на изучение после смерти:</p>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q11' value="q111">
+                <label class="form-check-label" for="question_input">Да</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id='question_input' name='q11' value="q112">
+                <label class="form-check-label" for="question_input">Нет</label>
+            </div>
+        </div></center>
+
+        <center><input type="submit" value='Check' id='check_button'></center>
+    </form>
+
+<script type='text/javascript'>
+    document.getElementById('introduction').hidden = true;
+</script>
+
+{% endblock content %}

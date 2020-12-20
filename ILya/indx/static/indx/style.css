@@ -1,0 +1,111 @@
+body{
+    background: rgb(226, 226, 226);
+}
+
+#photo1{
+    width: 35%;
+    margin: 5%;
+}
+
+/* -----------------------------------MAIN2-------------------------------------- */
+
+#second_part{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    /* background-image: linear-gradient(to right, rgb(201, 201, 201) , rgb(255, 255, 255)); */
+    background: rgb(197, 197, 197);
+}
+
+.urls{
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+}
+
+.frist_part_div1{
+    position: relative;
+    /* padding-top: 7%; */
+}
+
+.frist_part_div2{
+    position: relative;
+    /* padding-bottom: 7%; */
+}
+
+/* ----------------------------------MAIN3---------------------------------------------------- */
+
+#third_part{
+    padding-top: 5%;
+    padding-bottom: 17%;
+}
+
+.icons{
+    padding: 0.5%;
+    padding-left: 3.5%;
+    width: 12%;
+}
+
+.labels_for_icons{
+    padding-left: 0.2%;
+    font-size: 100%;
+}
+
+#third_part1{
+    float: left;
+    font-size: 130%;
+    width: 50%;
+    text-align: left;
+}
+
+#third_part2{
+    float: right;
+    font-size: 150%;
+    width: 50%;
+    text-align: left;
+}
+
+#icon_label_text{
+    color: rgb(78, 78, 78);
+}
+
+#icon_label_text:hover{
+    color: blue;
+}
+/* -------------------------------LAST_MAIN_PART--------------------------------------------------0 */
+
+#footer{
+    background: rgb(197, 197, 197);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* ----------------------------------PHOTO_GALARY----------------------------------- */
+
+#main_photos{
+    padding-top: 5%;
+}
+
+#photo{
+    width: 20%;
+    text-align: center;
+    padding: 0.2%;
+}
+
+#main_photos_last_div{
+    padding-bottom: 5%;
+}
+
+/* ---------------------------------------------BIO-------------------------------------------- */
+
+#main_bio{
+    width: 90%;
+    padding-top: 2%;
+    font-size: 130%;
+}
+
+#proof_div{
+    padding-top: 5%;
+}
+
+#proof_img_last{
+    padding-bottom: 5%;
+}
